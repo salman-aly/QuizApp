@@ -86,9 +86,16 @@ function renderQuestion() {
     var options = document.getElementsByName("option");
     for (var i = 0; i < options.length; i++) {
         if (options[i].checked) {
-            console.log(options[i].value)
+            if (options[i].value === question[index-1].value -1) {
+                score++
+            }
         }
     }
+
+    if (!questions[index]) {
+        return;
+    }
+
     question.innerHTML = `
     <div class="quiz">
         <div class="heading" id="heading">
