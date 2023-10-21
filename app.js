@@ -41,21 +41,6 @@ var quiz = [
     }
 ]
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 var form = document.getElementById("form")
 
 function login() {

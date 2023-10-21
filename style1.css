@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.quiz-main{
+    background-color: #1A87EC;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quiz{
+    height: 350px;
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+label{
+    border: 2px solid #1A87EC;
+    width: 50px !important;
+}
