@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css" />
+    <link
+      rel="shortcut icon"
+      href="images/WhatsApp_Image_2023-09-26_at_6.56.10_PM-removebg-preview.png"
+      type="image/x-icon" />
+    <title>Login</title>
+  </head>
+
+  <body>
+    <div
+      class="main"
+      onsubmit="return requiredForm()"
+      name="myForm"
+      required
+      id="form">
+      <h5>Login Here</h5>
+      <img
+        src="images/png-clipart-computer-icons-user-profile-avatar-heroes-silhouette-removebg-preview.png"
+        alt="" />
+      <i class="fa-solid fa-user"></i>
+      <input type="text" placeholder="Username" name="name" id="username" />
+      <input type="password" placeholder="Password" name="password" id="pass" />
+      <button onclick="login()" type="submit">Login</button>
+      <div class="social">
+        <img src="images/social-facebook-2019-circle-512.webp" alt="" />
+        <img
+          src="images/round-instagram-logo-isolated-white-background_469489-898.avif"
+          alt="" />
+        <img
+          src="images/logo-twitter-circle-png-transparent-image-1.png"
+          alt="" />
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
