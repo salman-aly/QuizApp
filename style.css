@@ -1,11 +1,10 @@
 body {
-    height: 90vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: 'Times New Roman', Times, serif;
-    background: rgb(5, 74, 165);
-    background: linear-gradient(286deg, rgba(5, 74, 165, 1) 51%, rgba(7, 128, 200, 1) 81%);
+    background-color: #fff;
 }
 
 
@@ -17,7 +16,8 @@ body {
     align-items: center;
     flex-direction: column;
     border-radius: 10px;
-    background-color: #fff;
+    background: rgb(122,114,253);
+    background: linear-gradient(4deg, rgba(122,114,253,1) 38%, rgba(158,65,245,1) 55%, rgba(169,49,242,1) 76%);
 }
 
 .main>h5 {
@@ -44,35 +44,70 @@ input {
     padding: 8px;
     outline: none;
     border: none;
-    border-bottom: 1px solid #1A87EC;
+    border-bottom: 2px solid #ffffff;
+    background: transparent;
+    color: #fff;
+}
+
+input::placeholder{
+    color: #fff;
 }
 
 input ::-moz-focus-inner {
-    color: black;
+    color: transparent;
 }
 
 .main button {
     width: 125px;
     border-radius: 20px;
-    background-color: #1A87EC;
+    background-color: #ffffff;
     height: 50px;
     border: none;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: #fff;
+    color: #000000;
     text-align: center;
     text-decoration: none;
     line-height: 1.8;
     cursor: pointer;
 }
 
-a:hover {
-    background-color: #ffffff;
+button:hover {
+    background: #1A87EC;
     transition: 0.3s ease-out;
     transform: translateY(2px);
-    border: 1px solid #1A87EC;
-    color: black !important;
+    color: rgb(255, 255, 255) !important;
 }
+
+.swal2-confirm{
+    width: 200px !important;
+    background-color: #1A87EC;
+}
+
+.swal2-confirm:focus{
+    border: none !important;
+}
+
+.forget a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .social {
     display: flex;
@@ -85,6 +120,6 @@ a:hover {
     height: 30px;
 }
 
-.quiz-page{
+.quiz-page {
     background-color: red;
 }
