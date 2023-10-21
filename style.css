@@ -10,7 +10,7 @@ body {
 
 
 .main {
-    height: 400px;
+    height: 500px;
     width: 300px;
     display: flex;
     align-items: center;
@@ -28,6 +28,11 @@ body {
     height: 50px;
     margin-top: -50px;
     margin-bottom: 60px;
+}
+
+
+.login-txt{
+    color: #fff;
 }
 
 input {
@@ -94,21 +99,6 @@ button:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .social {
     display: flex;
     flex-direction: row;
@@ -117,9 +107,16 @@ button:hover {
 }
 
 .social img {
-    height: 30px;
+    height: 25px;
 }
 
 .quiz-page {
     background-color: red;
+}
+
+.forget .hint-btn{
+    width: 200px !important;
+    height: 30px !important;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
 }

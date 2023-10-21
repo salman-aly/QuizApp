@@ -11,7 +11,7 @@ function login() {
             text: 'Username and password cant be empty!',
         });
     }
-    else if (userName === 'abc' && password === '123') {
+    else if (userName === 'smit' && password === 'smit') {
         alert("Login Successfully!");
         window.location.assign("quiz.html");
     } else {
@@ -24,4 +24,9 @@ function login() {
     document.getElementById("username").value = "";
     document.getElementById("pass").value = "";
 
+}
+
+
+function forget() {
+    Swal.fire("Username: smit" + " " + "\n" + "password: smit")
 }

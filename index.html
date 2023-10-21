@@ -21,25 +21,23 @@
       name="myForm"
       required
       id="form">
-      <h5>Login Here</h5>
-      <img
-        src="images/png-clipart-computer-icons-user-profile-avatar-heroes-silhouette-removebg-preview.png"
-        alt="" />
+      <h5 class="login-txt">Login Here</h5>
+      <img src="images/user.png" alt="" />
       <i class="fa-solid fa-user"></i>
       <input type="text" placeholder="Username" name="name" id="username" />
       <input type="password" placeholder="Password" name="password" id="pass" />
       <button onclick="login()" type="submit">Login</button>
       <p class="forget"><a href="">Forget password</a></p>
-      <p class="forget" id="forget" onclick="forget()"><a href="">Hint:Username & password</a></p>
       <div class="social">
         <img src="images/social-facebook-2019-circle-512.webp" alt="" />
-        <img
-          src="images/round-instagram-logo-isolated-white-background_469489-898.avif"
-          alt="" />
+        <img src="images/insta.png" alt="" />
         <img
           src="images/logo-twitter-circle-png-transparent-image-1.png"
           alt="" />
       </div>
+      <p class="forget" id="forget" onclick="forget()">
+        <button class="hint-btn">Hint:Username & password</button>
+      </p>
     </div>
 
     <script src="app.js"></script>
