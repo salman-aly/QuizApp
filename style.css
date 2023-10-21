@@ -11,7 +11,7 @@ body {
 
 .main {
     height: 500px;
-    width: 450px;
+    width: 400px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -66,14 +66,13 @@ input ::-moz-focus-inner {
     width: 200px;
     border-radius: 20px;
     background-color: #ffffff;
-    height: 70px;
     border: none;
     margin-top: 10px;
     margin-bottom: 10px;
     color: #000000;
     text-align: center;
     text-decoration: none;
-    line-height: 1.8;
+    line-height: 2;
     cursor: pointer;
 }
 
