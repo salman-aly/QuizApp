@@ -37,6 +37,7 @@ label {
 .heading h3 {
     border-bottom: 1px solid lightgrey;
     margin-bottom: 35px;
+    font-size: 25px;
 }
 
 .quiz .title {

@@ -1,4 +1,8 @@
-var quiz = [
+var question = document.getElementById("question");
+
+
+
+var questions = [
     {
         question: "What is the capital city of Pakistan?",
         option1: "Karachi",
@@ -73,3 +77,37 @@ function login() {
 function forget() {
     Swal.fire("Username: smit" + " " + "\n" + "password: smit")
 }
+
+
+
+var index = 0;
+function renderQuestion() {
+    var question = document.getElementById("question");
+    question.innerHTML = `
+    <div class="quiz">
+        <div class="heading" id="heading">
+          <h3>Quiz App</h3>
+        </div>
+        <div class="title">
+          <p>${questions[index].question}</p>
+        </div>
+        <div class="options">
+          <div>
+            <label><input type="radio" name="option" />${questions[index].option1}</label>
+          </div>
+          <div>
+            <label><input type="radio" name="option" />${questions[index].option2}</label>
+          </div>
+          <div>
+            <label><input type="radio" name="option" />${questions[index].option3}</label>
+          </div>
+          <div>
+            <label><input type="radio" name="option" />${questions[index].option4}</label>
+          </div>
+          <button onclick="next()">Next</button>
+        </div>
+      </div>
+    `
+}
+
+renderQuestion()
