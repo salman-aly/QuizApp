@@ -11,7 +11,7 @@ body {
 
 .main {
     height: 500px;
-    width: 300px;
+    width: 450px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -49,7 +49,7 @@ input {
     padding: 8px;
     outline: none;
     border: none;
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 1px solid lightgrey;
     background: transparent;
     color: #fff;
 }
@@ -63,10 +63,10 @@ input ::-moz-focus-inner {
 }
 
 .main button {
-    width: 125px;
+    width: 200px;
     border-radius: 20px;
     background-color: #ffffff;
-    height: 50px;
+    height: 70px;
     border: none;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -87,12 +87,8 @@ button:hover {
 .swal2-confirm{
     width: 200px !important;
     background-color: #1A87EC;
+    box-shadow: none !important;
 }
-
-.swal2-confirm:focus{
-    border: none !important;
-}
-
 .forget a{
     color: #fff;
     text-decoration: none;
