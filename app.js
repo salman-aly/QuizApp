@@ -1,5 +1,6 @@
 var question = document.getElementById("question");
-var form = document.getElementById("form")
+var form = document.getElementById("form");
+var scoreCart = document.querySelector(".scoreCart");
 var index = 0;
 var score = 0;
 
@@ -84,7 +85,6 @@ function renderQuestion() {
     var options = document.getElementsByName("option");
     for (var i = 0; i < options.length; i++) {
         if (options[i].checked) {
-            console.log(options[i].value, questions[index - 1].answer)
             if (options[i].value === questions[index - 1].answer) {
                 score++;
             }
@@ -92,12 +92,12 @@ function renderQuestion() {
     }
 
     if (!questions[index]) {
-        console.log("score " + score);
+        alert("score " + score)
         return;
     }
 
     question.innerHTML = `
-    <div class="quiz">
+    <div class="quiz" id="quiz">
         <div class="heading" id="heading">
           <h3>Quiz App</h3>
         </div>
