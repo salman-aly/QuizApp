@@ -2,6 +2,7 @@ var question = document.getElementById("question");
 var form = document.getElementById("form");
 var showScore = document.getElementById("result");
 var scoreCart = document.querySelector(".scoreCart");
+var quitBtn = document.getElementById("quit");
 var index = 0;
 var score = 0;
 
@@ -92,19 +93,20 @@ function renderQuestion() {
         }
     }
 
-    function quit() {
-        location.reload();
+    function quitBtn() {
+        window.location.reload();
     }
+    //  quitBtn()
 
     if (!questions[index]) {
         showScore.innerHTML = `
-         <div class="score" id="result">
-           <h4>Your score is ${score} out of ${options.length}</h4>
-         </div>
+          <div class="score" id="result">
+            <h4>Your score is ${score} out of ${options.length}</h4>
+            <button id="quit" onclick="window.location.reload()">Play again</button>
+          </div>
         `;
         question.style.display = "none"
         scoreCart.style.display = "block"
-        // quit()
         return;
     }
 

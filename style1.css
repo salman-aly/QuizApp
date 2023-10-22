@@ -107,9 +107,38 @@ label:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     top: 20% !important;
     position: relative;
-    left:35%;
+    left: 35%;
     background-color: #1A87EC;
     color: #fff;
+    box-shadow: 15px 27px 12px -6px rgba(0, 0, 0, 0.72);
+    -webkit-box-shadow: 15px 27px 12px -6px rgba(0, 0, 0, 0.72);
+    -moz-box-shadow: 15px 27px 12px -6px rgba(0, 0, 0, 0.72);
+}
+
+.score h4 {
+    margin-top: 30%;
+    margin-bottom: 15px;
+}
+
+#quit {
+    height: 30px;
+    width: 180px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    line-height: 2;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
