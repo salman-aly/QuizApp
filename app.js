@@ -1,4 +1,5 @@
 var question = document.getElementById("question");
+var form = document.getElementById("form")
 var index = 0;
 var score = 0;
 
@@ -46,7 +47,6 @@ var questions = [
     }
 ]
 
-var form = document.getElementById("form")
 
 function login() {
     var userName = document.getElementById("username").value;

@@ -22,6 +22,8 @@
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
+    background-color: transparent;
+    border: 2px solid #fff;
 }
 
 label {
@@ -32,12 +34,15 @@ label {
     margin-bottom: 5px;
     background-color: #F0F8FF;
     border-radius: 3px;
+    border: none;
+    line-height: 1.8;
 }
 
 .heading h3 {
     border-bottom: 1px solid lightgrey;
     margin-bottom: 35px;
     font-size: 25px;
+    color: #fff;
 }
 
 .quiz .title {
@@ -48,11 +53,11 @@ label {
 .quiz button {
     width: 150px;
     border-radius: 20px;
-    background-color: #1A87EC;
+    background-color: #ffffff;
     border: none;
     margin-top: 10px;
     margin-bottom: 10px;
-    color: #ffffff;
+    color: #000000;
     text-align: center;
     text-decoration: none;
     line-height: 2;
