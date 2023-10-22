@@ -1,5 +1,6 @@
 var question = document.getElementById("question");
-
+var index = 0;
+var score = 0;
 
 
 var questions = [
@@ -78,21 +79,20 @@ function forget() {
     Swal.fire("Username: smit" + " " + "\n" + "password: smit")
 }
 
-
-
-var index = 0;
 function renderQuestion() {
     var question = document.getElementById("question");
     var options = document.getElementsByName("option");
     for (var i = 0; i < options.length; i++) {
         if (options[i].checked) {
-            if (options[i].value === question[index-1].value -1) {
-                score++
+            console.log(options[i].value, questions[index - 1].answer)
+            if (options[i].value === questions[index - 1].answer) {
+                score++;
             }
         }
     }
 
     if (!questions[index]) {
+        console.log("score " + score);
         return;
     }
 
@@ -109,13 +109,13 @@ function renderQuestion() {
             <label><input type="radio" name="option" value=${questions[index].option1} />${questions[index].option1}</label>
           </div>
           <div>
-            <label><input type="radio" name="option" value=${questions[index].option1} />${questions[index].option2}</label>
+            <label><input type="radio" name="option" value=${questions[index].option2} />${questions[index].option2}</label>
           </div>
           <div>
-            <label><input type="radio" name="option" value=${questions[index].option1} />${questions[index].option3}</label>
+            <label><input type="radio" name="option" value=${questions[index].option3} />${questions[index].option3}</label>
           </div>
           <div>
-            <label><input type="radio" name="option" value=${questions[index].option1}>${questions[index].option4}</label>
+            <label><input type="radio" name="option" value=${questions[index].option4}>${questions[index].option4}</label>
           </div>
           <button onclick="next()">Next</button>
         </div>
