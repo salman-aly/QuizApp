@@ -1,6 +1,7 @@
 var question = document.getElementById("question");
 var form = document.getElementById("form");
 var showScore = document.getElementById("result");
+var scoreCart = document.querySelector(".scoreCart");
 var index = 0;
 var score = 0;
 
@@ -97,13 +98,12 @@ function renderQuestion() {
 
     if (!questions[index]) {
         showScore.innerHTML = `
-        // alert("score " + score)
          <div class="score" id="result">
-           <h4>${score}</h4>
+           <h4>Your score is ${score} out of ${options.length}</h4>
          </div>
         `;
-
         question.style.display = "none"
+        scoreCart.style.display = "block"
         // quit()
         return;
     }
