@@ -87,3 +87,8 @@ label:hover{
     flex-direction: column;
     cursor: pointer;
 }
+
+.score{
+    border: 2px solid #fff;
+    color: #000000;
+}

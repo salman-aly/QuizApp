@@ -1,6 +1,6 @@
 var question = document.getElementById("question");
 var form = document.getElementById("form");
-var scoreCart = document.querySelector(".scoreCart");
+var showScore = document.getElementById("result");
 var index = 0;
 var score = 0;
 
@@ -91,10 +91,23 @@ function renderQuestion() {
         }
     }
 
+    function quit() {
+        location.reload();
+    }
+
     if (!questions[index]) {
-        alert("score " + score)
+        showScore.innerHTML = `
+        // alert("score " + score)
+         <div class="score" id="result">
+           <h4>${score}</h4>
+         </div>
+        `;
+
+        question.style.display = "none"
+        // quit()
         return;
     }
+
 
     question.innerHTML = `
     <div class="quiz" id="quiz">
