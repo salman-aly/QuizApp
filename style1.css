@@ -95,12 +95,21 @@ label:hover {
     justify-content: center;
     align-items: center;
     display: none;
+    margin: 0 auto;
+    background-color: #fff;
 }
 
 .score {
-    border: 2px solid #000000;
+    border-radius: 5px;
     color: #000000;
-    width: 200px;
+    width: 350px;
     height: 300px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 20% !important;
+    position: relative;
+    left:35%;
+    background-color: #1A87EC;
+    color: #fff;
 }
