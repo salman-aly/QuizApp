@@ -17,7 +17,7 @@
 }
 
 .quiz {
-    height: 350px;
+    height: 400px;
     width: 300px;
     background-color: #fff;
     padding: 20px;
@@ -36,7 +36,12 @@ label {
     border-radius: 3px;
     border: none;
     line-height: 1.8;
+    cursor: pointer;
 }
+label:hover{
+    background-color: #ddd;
+}
+
 
 .heading h3 {
     border-bottom: 1px solid lightgrey;
@@ -47,11 +52,14 @@ label {
 
 .quiz .title {
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 20px;
 }
 
 .quiz button {
-    width: 150px;
+    width: 180px;
+    height: 30px;
     border-radius: 20px;
     background-color: #ffffff;
     border: none;
@@ -66,10 +74,15 @@ label {
     margin-top: 20px;
 }
 
+.quiz button:hover{
+    background-color: #ddd;
+}
+
 
 .options {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    cursor: pointer;
 }
