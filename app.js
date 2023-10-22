@@ -3,6 +3,7 @@ var form = document.getElementById("form");
 var showScore = document.getElementById("result");
 var scoreCart = document.querySelector(".scoreCart");
 var quitBtn = document.getElementById("quit");
+var strtquizBtn = document.getElementById("strtquizBtn");
 var index = 0;
 var score = 0;
 
@@ -143,4 +144,11 @@ renderQuestion()
 function next() {
     index++;
     renderQuestion()
+}
+
+
+
+function strtQuiz() {
+    strtquizBtn.style.display = "none"
+    quiz.style.display = "block"
 }

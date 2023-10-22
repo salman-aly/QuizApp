@@ -24,6 +24,7 @@
     border-radius: 5px;
     background-color: transparent;
     border: 2px solid #fff;
+    display: none;
 }
 
 label {
@@ -39,10 +40,13 @@ label {
     cursor: pointer;
 }
 
+label input {
+    margin-right: 5px;
+}
+
 label:hover {
     background-color: #ddd;
 }
-
 
 .heading h3 {
     border-bottom: 1px solid lightgrey;
@@ -81,12 +85,34 @@ label:hover {
 }
 
 
+.strtBtn button{
+    height: 50px;
+    width: 200px;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    top: 50%;
+    left: 40%;
+    cursor: pointer;
+}
+
+.strtBtn button:hover{
+    background-color: #ddd;
+}
+
+
 .options {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     cursor: pointer;
+    gap: 5px;
 }
 
 .scoreCart {
@@ -141,4 +167,8 @@ label:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#quit:hover {
+    background-color: #ddd;
 }
