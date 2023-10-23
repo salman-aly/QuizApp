@@ -4,8 +4,10 @@ var showScore = document.getElementById("result");
 var scoreCart = document.querySelector(".scoreCart");
 var quitBtn = document.getElementById("quit");
 var strtquizBtn = document.getElementById("strtquizBtn");
+var timer = document.querySelector(".timer");
 var index = 0;
 var score = 0;
+var timeLeft = 10;
 
 
 var questions = [
@@ -86,6 +88,8 @@ function forget() {
 function renderQuestion() {
     var question = document.getElementById("question");
     var options = document.getElementsByName("option");
+    clearInterval()
+    startTimer()
     for (var i = 0; i < options.length; i++) {
         if (options[i].checked) {
             if (options[i].value === questions[index - 1].answer) {
@@ -94,9 +98,9 @@ function renderQuestion() {
         }
     }
 
-    function quitBtn() {
-        window.location.reload();
-    }
+    // function quitBtn() {
+    //     window.location.reload();
+    // }
     //  quitBtn()
 
     if (!questions[index]) {
@@ -147,8 +151,14 @@ function next() {
 }
 
 
+// function strtQuiz() {
+//     strtquizBtn.style.display = "none"
+//     quiz.style.display = "block"
+// }
 
-function strtQuiz() {
-    strtquizBtn.style.display = "none"
-    quiz.style.display = "block"
+
+function startTimer() {
+    setInterval(timer,1000)
+    timer.textContent = timeLeft;
+    timeLeft--;
 }
