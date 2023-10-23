@@ -90,6 +90,7 @@ function forget() {
 function renderQuestion() {
     var question = document.getElementById("question");
     var options = document.getElementsByName("option");
+    document.documentElement.requestFullscreen();
     clearInterval(counter)
     startTimer(timeLeft)
     for (var i = 0; i < options.length; i++) {
@@ -154,7 +155,7 @@ function next() {
 
 
 function strtquizBtn() {
-    document.documentElement.requestFullscreen();
+    window.documentElement.requestFullscreen();
 }
 
 
