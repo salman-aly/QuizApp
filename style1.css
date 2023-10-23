@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 .quiz-main {
@@ -77,6 +80,8 @@ label:hover {
     cursor: pointer;
     margin: auto;
     margin-top: 20px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .quiz button:hover {
@@ -92,7 +97,8 @@ label:hover {
     justify-content: center;
     align-items: center;
     position: absolute;
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: 600;
     border: none;
     border-radius: 3px;
     top: 50%;
@@ -118,6 +124,8 @@ label:hover {
     flex-direction: column;
     cursor: pointer;
     gap: 5px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .scoreCart {
@@ -152,11 +160,13 @@ label:hover {
 .score h4 {
     margin-top: 30%;
     margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 #quit {
-    height: 30px;
-    width: 180px;
+    height: 35px;
+    width: 170px;
     border-radius: 20px;
     background-color: #ffffff;
     border: none;
@@ -172,6 +182,8 @@ label:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 #quit:hover {

@@ -145,7 +145,7 @@ function renderQuestion() {
     `
 }
 
-renderQuestion()
+// renderQuestion()
 
 function next() {
     index++;
@@ -153,9 +153,7 @@ function next() {
 }
 
 
-function startQuiz() {
-    strtquizBtn.style.display = "none";
-    // quiz.style.display = "block";
+function strtquizBtn() {
     document.documentElement.requestFullscreen();
 }
 
