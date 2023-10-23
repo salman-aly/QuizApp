@@ -1,14 +1,13 @@
 var question = document.getElementById("question");
-var form = document.getElementById("form");
 var showScore = document.getElementById("result");
 var scoreCart = document.querySelector(".scoreCart");
 var quitBtn = document.getElementById("quit");
 var strtquizBtn = document.getElementById("strtquizBtn");
 var timer = document.querySelector(".timer");
-var quiz = document.getElementById("quiz");
+// var quiz = document.getElementById("quiz");
 var index = 0;
 var score = 0;
-var timeLeft = 10;
+var timeLeft = 5;
 var counter;
 
 
@@ -107,19 +106,19 @@ function renderQuestion() {
     //  quitBtn()
 
     if (!questions[index]) {
-    showScore.innerHTML = `
+        showScore.innerHTML = `
           <div class="score" id="result">
             <h4>Your score is ${score} out of ${options.length}</h4>
             <button id="quit" onclick="window.location.assign('start.html')">Play again</button>
           </div>
         `;
-    question.style.display = "none"
-    scoreCart.style.display = "block"
-    return;
-}
+        question.style.display = "none"
+        scoreCart.style.display = "block"
+        return;
+    }
 
 
-question.innerHTML = `
+    question.innerHTML = `
     <div class="quiz" id="quiz">
         <div class="heading" id="heading">
           <h3>Quiz App</h3>
