@@ -8,6 +8,7 @@ var timer = document.querySelector(".timer");
 var index = 0;
 var score = 0;
 var timeLeft = 10;
+var counter;
 
 
 var questions = [
@@ -88,8 +89,8 @@ function forget() {
 function renderQuestion() {
     var question = document.getElementById("question");
     var options = document.getElementsByName("option");
-    clearInterval()
-    startTimer()
+    clearInterval(counter)
+    startTimer(timeLeft)
     for (var i = 0; i < options.length; i++) {
         if (options[i].checked) {
             if (options[i].value === questions[index - 1].answer) {
@@ -158,7 +159,14 @@ function next() {
 
 
 function startTimer() {
-    setInterval(timer,1000)
-    timer.textContent = timeLeft;
-    timeLeft--;
+    counter = setInterval(function() {
+        timer.textContent = timeLeft;
+        timeLeft--;
+        if (timeLeft === 0) {
+            clearInterval(counter);
+            renderQuestion();
+        }
+    }, 1000);
 }
+
+// renderQuestion()
