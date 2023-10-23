@@ -7,7 +7,7 @@ var timer = document.querySelector(".timer");
 // var quiz = document.getElementById("quiz");
 var index = 0;
 var score = 0;
-var timeLeft = 5;
+var timeLeft = 10;
 var counter;
 
 
@@ -114,6 +114,7 @@ function renderQuestion() {
         `;
         question.style.display = "none"
         scoreCart.style.display = "block"
+        timer.style.display = "none"
         return;
     }
 
