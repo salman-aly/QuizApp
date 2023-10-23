@@ -107,19 +107,19 @@ function renderQuestion() {
     //  quitBtn()
 
     if (!questions[index]) {
-        showScore.innerHTML = `
+    showScore.innerHTML = `
           <div class="score" id="result">
             <h4>Your score is ${score} out of ${options.length}</h4>
             <button id="quit" onclick="window.location.assign('start.html')">Play again</button>
           </div>
         `;
-        question.style.display = "none"
-        scoreCart.style.display = "block"
-        return;
-    }
+    question.style.display = "none"
+    scoreCart.style.display = "block"
+    return;
+}
 
 
-    question.innerHTML = `
+question.innerHTML = `
     <div class="quiz" id="quiz">
         <div class="heading" id="heading">
           <h3>Quiz App</h3>
@@ -146,7 +146,7 @@ function renderQuestion() {
     `
 }
 
-// renderQuestion()
+renderQuestion()
 
 function next() {
     index++;
@@ -155,7 +155,7 @@ function next() {
 
 
 function strtquizBtn() {
-    window.documentElement.requestFullscreen();
+    document.documentElement.requestFullscreen();
 }
 
 
@@ -167,7 +167,6 @@ function startTimer() {
             clearInterval(counter);
             renderQuestion();
         }
+
     }, 1000);
 }
-
-renderQuestion()

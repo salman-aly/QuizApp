@@ -1,5 +1,5 @@
 body {
-    height: 100vh;
+    height: 95vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,7 +10,7 @@ body {
 
 
 .main {
-    height: 500px;
+    height: 550px;
     width: 400px;
     display: flex;
     align-items: center;
@@ -45,7 +45,7 @@ input {
     cursor: pointer;
     border: 1px solid #1A87EC;
     border-radius: 2px;
-    font-size: 14px;
+    font-size: 16px;
     padding: 8px;
     outline: none;
     border: none;
@@ -67,13 +67,15 @@ input ::-moz-focus-inner {
     border-radius: 20px;
     background-color: #ffffff;
     border: none;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
     color: #000000;
     text-align: center;
     text-decoration: none;
     line-height: 2;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 button:hover {
@@ -110,8 +112,9 @@ button:hover {
 }
 
 .forget .hint-btn{
-    width: 200px !important;
-    height: 30px !important;
+    font-size: 14px;
+    font-weight: 400;
+    width: 250px !important;
     background-color: transparent;
     color: rgb(255, 255, 255);
 }
