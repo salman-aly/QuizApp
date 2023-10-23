@@ -24,7 +24,7 @@
     border-radius: 5px;
     background-color: transparent;
     border: 2px solid #fff;
-    display: block;
+    display: none;
 }
 
 label {
@@ -99,6 +99,7 @@ label:hover {
     top: 50%;
     left: 40%;
     cursor: pointer;
+    display: block;
 }
 
 .strtBtn button:hover {

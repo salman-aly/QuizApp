@@ -5,6 +5,7 @@ var scoreCart = document.querySelector(".scoreCart");
 var quitBtn = document.getElementById("quit");
 var strtquizBtn = document.getElementById("strtquizBtn");
 var timer = document.querySelector(".timer");
+var quiz = document.getElementById("quiz");
 var index = 0;
 var score = 0;
 var timeLeft = 10;
@@ -152,14 +153,15 @@ function next() {
 }
 
 
-// function strtQuiz() {
-//     strtquizBtn.style.display = "none"
-//     quiz.style.display = "block"
-// }
+function startQuiz() {
+    strtquizBtn.style.display = "none";
+    question.style.display = "block";
+    // document.documentElement.requestFullscreen();
+}
 
 
 function startTimer() {
-    counter = setInterval(function() {
+    counter = setInterval(function () {
         timer.textContent = timeLeft;
         timeLeft--;
         if (timeLeft === 0) {
@@ -169,4 +171,4 @@ function startTimer() {
     }, 1000);
 }
 
-// renderQuestion()
+renderQuestion()
