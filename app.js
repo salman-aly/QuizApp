@@ -155,7 +155,7 @@ function next() {
 
 
 function strtquizBtn() {
-    document.documentElement.requestFullscreen();
+    element.requestFullscreen()
 }
 
 
