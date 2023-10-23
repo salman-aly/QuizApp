@@ -24,7 +24,7 @@
     border-radius: 5px;
     background-color: transparent;
     border: 2px solid #fff;
-    display: none;
+    display: block;
 }
 
 label {
@@ -84,11 +84,10 @@ label:hover {
     color: #000000;
 }
 
-
 .strtBtn button {
     height: 50px;
     width: 200px;
-    color: #000000;
+    color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,10 +99,15 @@ label:hover {
     left: 40%;
     cursor: pointer;
     display: block;
+    background-color: #1A87EC;
+    box-shadow: 2px 39px 76px 4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 2px 39px 76px 4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 2px 39px 76px 4px rgba(0, 0, 0, 0.75);
 }
 
 .strtBtn button:hover {
-    background-color: #ddd;
+    background-color: #ffffff;
+    color: #1A87EC;
 }
 
 

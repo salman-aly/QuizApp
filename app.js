@@ -69,7 +69,7 @@ function login() {
     }
     else if (userName === 'smit' && password === 'smit') {
         alert("Login Successfully!");
-        window.location.assign("quiz.html");
+        window.location.assign("start.html");
     } else {
         Swal.fire({
             icon: 'error',
@@ -109,7 +109,7 @@ function renderQuestion() {
         showScore.innerHTML = `
           <div class="score" id="result">
             <h4>Your score is ${score} out of ${options.length}</h4>
-            <button id="quit" onclick="window.location.reload()">Play again</button>
+            <button id="quit" onclick="window.location.assign('start.html')">Play again</button>
           </div>
         `;
         question.style.display = "none"
@@ -155,8 +155,8 @@ function next() {
 
 function startQuiz() {
     strtquizBtn.style.display = "none";
-    question.style.display = "block";
-    // document.documentElement.requestFullscreen();
+    // quiz.style.display = "block";
+    document.documentElement.requestFullscreen();
 }
 
 
